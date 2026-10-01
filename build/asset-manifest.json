@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cyberaionics/ColabSpace/static/css/main.b9ba05a3.css",
+    "main.js": "/cyberaionics/ColabSpace/static/js/main.a10b6da4.js",
+    "index.html": "/cyberaionics/ColabSpace/index.html",
+    "main.b9ba05a3.css.map": "/cyberaionics/ColabSpace/static/css/main.b9ba05a3.css.map",
+    "main.a10b6da4.js.map": "/cyberaionics/ColabSpace/static/js/main.a10b6da4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9ba05a3.css",
+    "static/js/main.a10b6da4.js"
+  ]
+}
