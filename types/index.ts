@@ -76,7 +76,7 @@ export interface Project {
   description: string;
   club_id: string;
   organization_id?: string;
-  status: 'open' | 'closed' | 'in_progress' | 'completed';
+  status: 'open' | 'closed' | 'in_progress' | 'completed' | 'pending_approval';
   team_size: number;
   team_size_current: number;
   deadline?: string;
@@ -88,8 +88,24 @@ export interface Project {
   required_skills?: string[];
   contributor_description?: string;
   github_url?: string;
+  rejection_reason?: string;
+  approved_by?: string;
+  approved_at?: string;
+  rejected_by?: string;
+  rejected_at?: string;
+  resubmission_count?: number;
   created_at: string;
   updated_at: string;
+}
+
+export interface ProjectStatusHistory {
+  id: string;
+  project_id: string;
+  old_status?: string;
+  new_status: string;
+  changed_by?: string;
+  reason?: string;
+  created_at: string;
 }
 
 export interface Milestone {
