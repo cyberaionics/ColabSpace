@@ -38,6 +38,37 @@ export interface UserProfile extends User {
   member_count?: number;
 }
 
+export interface SystemSettings {
+  id: string;
+  key: string;
+  value: string;
+  description?: string;
+  updated_at: string;
+}
+
+export interface Announcement {
+  id: string;
+  title: string;
+  message: string;
+  target_role?: UserRole;
+  is_active: boolean;
+  created_by?: string;
+  created_at: string;
+  expires_at?: string;
+}
+
+export interface Invitation {
+  id: string;
+  email: string;
+  role: UserRole;
+  organization_id?: string;
+  token: string;
+  expires_at: string;
+  used: boolean;
+  created_by?: string;
+  created_at: string;
+}
+
 export interface Project {
   id: string;
   title: string;
